@@ -1,0 +1,38 @@
+# TYPO3
+/public/fileadmin/
+/public/typo3/
+/public/typo3conf/ext/
+/public/typo3temp/
+/public/uploads/
+/var/
+/vendor/
+
+# Keep important directories
+!public/fileadmin/.gitkeep
+!public/typo3temp/.gitkeep
+!var/.gitkeep
+
+# DDEV
+.ddev/.gitignore
+.ddev/db_snapshots/
+.ddev/mutagen/
+.ddev/.webimageBuild/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+*.local.yaml
+
+# Build
+node_modules/
+/Build/

@@ -1,0 +1,28 @@
+base: 'https://t3-v14-2.ddev.site/'
+baseVariants:
+  -
+    base: 'https://t3-v14-2.ddev.site/'
+    condition: 'applicationContext == "Development"'
+dependencies:
+  - typo3/theme-camino
+  - typo3/seo-sitemap
+  - typo3/redirects
+errorHandling:
+  -
+    errorCode: 404
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=404'
+languages:
+  -
+    title: Deutsch
+    enabled: true
+    languageId: 0
+    base: /
+    locale: de_DE.UTF-8
+    navigationTitle: DE
+    hreflang: de-DE
+    direction: ltr
+    flag: de
+    websiteTitle: 'TYPO3 v14.2 Site'
+rootPageId: 1
+websiteTitle: ''

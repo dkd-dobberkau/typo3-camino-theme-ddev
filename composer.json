@@ -1,0 +1,78 @@
+{
+    "name": "local/t3-v14-2",
+    "description": "TYPO3 CMS Project",
+    "license": "GPL-2.0-or-later",
+    "type": "project",
+    "require": {
+        "php": "^8.3",
+        "helhum/typo3-console": "^8.3",
+        "typo3/cms-backend": "^14.0",
+        "typo3/cms-core": "^14.0",
+        "typo3/cms-filelist": "^14.0",
+        "typo3/cms-fluid-styled-content": "^14.0",
+        "typo3/cms-frontend": "^14.0",
+        "typo3/cms-info": "^14.0",
+        "typo3/cms-install": "^14.0",
+        "typo3/cms-lowlevel": "^14.0",
+        "typo3/cms-recycler": "^14.0",
+        "typo3/cms-redirects": "^14.0",
+        "typo3/cms-reports": "^14.0",
+        "typo3/cms-rte-ckeditor": "^14.0",
+        "typo3/cms-seo": "^14.0",
+        "typo3/cms-setup": "^14.0",
+        "typo3/cms-sys-note": "^14.0",
+        "typo3/cms-tstemplate": "^14.0",
+        "typo3/theme-camino": "^14.1"
+    },
+    "require-dev": {
+        "typo3/testing-framework": "^9.0",
+        "phpstan/phpstan": "^1.10",
+        "friendsofphp/php-cs-fixer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Local\\": "packages/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "typo3/class-alias-loader": true,
+            "typo3/cms-composer-installers": true
+        },
+        "platform": {
+            "php": "8.3"
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "typo3/cms": {
+            "web-dir": "public"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/*"
+        }
+    ],
+    "scripts": {
+        "post-autoload-dump": [
+            "@php vendor/bin/typo3 cache:flush --no-interaction || true"
+        ],
+        "typo3:setup": [
+            "@php vendor/bin/typo3 setup --no-interaction"
+        ],
+        "typo3:flush": [
+            "@php vendor/bin/typo3 cache:flush"
+        ],
+        "test": [
+            "@php vendor/bin/phpunit -c Build/phpunit.xml"
+        ],
+        "lint": [
+            "@php vendor/bin/php-cs-fixer fix --dry-run --diff"
+        ],
+        "lint:fix": [
+            "@php vendor/bin/php-cs-fixer fix"
+        ]
+    }
+}
