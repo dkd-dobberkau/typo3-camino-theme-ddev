@@ -1,4 +1,4 @@
-name: t3-v14-2
+name: t3-v14-1
 type: typo3
 docroot: public
 php_version: "8.3"

@@ -1,7 +1,7 @@
-base: 'https://t3-v14-2.ddev.site/'
+base: 'https://t3-v14-1.ddev.site/'
 baseVariants:
   -
-    base: 'https://t3-v14-2.ddev.site/'
+    base: 'https://t3-v14-1.ddev.site/'
     condition: 'applicationContext == "Development"'
 dependencies:
   - typo3/theme-camino

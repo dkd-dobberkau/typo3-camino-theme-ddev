@@ -16,7 +16,7 @@ Das Script `install.sh` führt alle unten dokumentierten Schritte automatisch au
 
 | Einstellung | Wert |
 |-------------|------|
-| Projektname | t3-v14-2 |
+| Projektname | t3-v14-1 |
 | TYPO3 Version | 14.1.0 |
 | PHP Version | 8.3 |
 | Datenbank | MariaDB 10.11 |
@@ -26,7 +26,7 @@ Das Script `install.sh` führt alle unten dokumentierten Schritte automatisch au
 ## 1. Projektstruktur erstellt
 
 ```
-t3-v14-2/
+t3-v14-1/
 ├── .ddev/
 │   ├── config.yaml
 │   ├── commands/web/typo3
@@ -50,7 +50,7 @@ t3-v14-2/
 
 **.ddev/config.yaml:**
 ```yaml
-name: t3-v14-2
+name: t3-v14-1
 type: typo3
 docroot: public
 php_version: "8.3"
@@ -122,7 +122,7 @@ ddev typo3 setup \
 
 ## 6. Trusted Hosts Pattern konfiguriert
 
-**Problem:** UnexpectedValueException - Host header 't3-v14-2.ddev.site' nicht erlaubt.
+**Problem:** UnexpectedValueException - Host header 't3-v14-1.ddev.site' nicht erlaubt.
 
 **Lösung:** In `config/system/settings.php` hinzugefügt:
 ```php
@@ -144,7 +144,7 @@ ddev typo3 cache:flush
 
 **config/sites/main/config.yaml:**
 ```yaml
-base: 'https://t3-v14-2.ddev.site/'
+base: 'https://t3-v14-1.ddev.site/'
 rootPageId: 1
 dependencies:
   - typo3/theme-camino
@@ -166,7 +166,7 @@ errorHandling:
     errorHandler: Page
     errorContentSource: 't3://page?uid=404'
 baseVariants:
-  - base: 'https://t3-v14-2.ddev.site/'
+  - base: 'https://t3-v14-1.ddev.site/'
     condition: 'applicationContext == "Development"'
 ```
 
@@ -174,9 +174,9 @@ baseVariants:
 
 | Service | URL |
 |---------|-----|
-| Frontend | https://t3-v14-2.ddev.site |
-| Backend | https://t3-v14-2.ddev.site/typo3 |
-| Mailpit | https://t3-v14-2.ddev.site:8026 |
+| Frontend | https://t3-v14-1.ddev.site |
+| Backend | https://t3-v14-1.ddev.site/typo3 |
+| Mailpit | https://t3-v14-1.ddev.site:8026 |
 
 **Backend Login:**
 - Benutzer: `admin`

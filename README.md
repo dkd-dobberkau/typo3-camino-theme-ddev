@@ -1,4 +1,4 @@
-# t3-v14-2
+# t3-v14-1
 
 TYPO3 14.1 Projekt mit DDEV Entwicklungsumgebung.
 
@@ -24,8 +24,8 @@ ddev typo3 backend:createadmin admin@example.com admin
 
 | Service | URL |
 |---------|-----|
-| Frontend | https://t3-v14-2.ddev.site |
-| Backend | https://t3-v14-2.ddev.site/typo3 |
+| Frontend | https://t3-v14-1.ddev.site |
+| Backend | https://t3-v14-1.ddev.site/typo3 |
 
 ## DDEV Befehle
 
