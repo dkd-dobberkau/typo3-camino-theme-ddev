@@ -68,3 +68,9 @@ vendor/bin/typo3 cache:warmup
 ├── var/                # TYPO3 var Directory
 └── vendor/             # Composer Dependencies
 ```
+
+## Dokumentation
+
+- [INSTALLATION.md](INSTALLATION.md) - Detaillierte Installationsanleitung
+- [CAMINO.md](CAMINO.md) - Camino Theme Dokumentation & FAQ
+- [Gist](https://gist.github.com/dkd-dobberkau/fa709d84ced310dad15ed75d23f5117b) - Install-Script & Dokumentation
