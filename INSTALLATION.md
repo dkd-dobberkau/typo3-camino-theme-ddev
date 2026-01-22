@@ -160,7 +160,7 @@ languages:
     hreflang: de-DE
     direction: ltr
     flag: de
-    websiteTitle: 'TYPO3 v14.2 Site'
+    websiteTitle: 'TYPO3 v14.1 Site'
 errorHandling:
   - errorCode: 404
     errorHandler: Page

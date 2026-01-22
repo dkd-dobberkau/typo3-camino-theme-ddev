@@ -1,6 +1,6 @@
 # t3-v14-2
 
-TYPO3 14.2 Projekt mit DDEV Entwicklungsumgebung.
+TYPO3 14.1 Projekt mit DDEV Entwicklungsumgebung.
 
 ## Voraussetzungen
 
