@@ -1,0 +1,32 @@
+/**
+ * DKD Green Color Scheme for Camino Theme
+ * Based on www.dkd.de brand colors
+ */
+
+.theme-dkd-green {
+    /* Primary Colors */
+    --color-primary-75: #B6D644;
+    --color-primary-100: #5B7F00;
+
+    /* Neutral Scale (light to dark) */
+    --color-neutral-0: #FFFFFF;
+    --color-neutral-10: #F7F7F7;
+    --color-neutral-20: #EFEFEF;
+    --color-neutral-30: #E0E0E0;
+    --color-neutral-40: #CFCDCD;
+    --color-neutral-50: #B0B0B0;
+    --color-neutral-60: #707070;
+    --color-neutral-70: #6B6B6B;
+    --color-neutral-80: #1C1C1C;
+    --color-neutral-90: #0A0A0A;
+
+    /* Semantic Colors */
+    --color-info: #0077CC;
+    --color-info-soft: #E5F2FF;
+    --color-success: #00E676;
+    --color-success-soft: #E5FFF0;
+    --color-warning: #FF9100;
+    --color-warning-soft: #FFF3E0;
+    --color-error: #FF1744;
+    --color-error-soft: #FFE5EA;
+}

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a8e1fddc410626a2aaad36589712b2d",
+    "content-hash": "f1c7f7a38f834514a6bf801302bbdef1",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1279,6 +1279,37 @@
                 }
             ],
             "time": "2025-12-12T12:00:43+00:00"
+        },
+        {
+            "name": "local/site-package",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/site_package",
+                "reference": "7a551b1200ea74c0b958096ae0223eb524bff7c9"
+            },
+            "require": {
+                "typo3/cms-core": "^14.0",
+                "typo3/theme-camino": "^14.1"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "site_package"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Local\\SitePackage\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Site package with DKD Green color scheme for TYPO3 Camino theme",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "lolli42/finediff",
@@ -10425,7 +10456,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "local/site-package": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -5,6 +5,7 @@ baseVariants:
     condition: 'applicationContext == "Development"'
 dependencies:
   - typo3/theme-camino
+  - local/site-package
   - typo3/seo-sitemap
   - typo3/redirects
 errorHandling:

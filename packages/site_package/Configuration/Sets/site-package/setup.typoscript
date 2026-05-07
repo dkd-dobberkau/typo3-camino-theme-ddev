@@ -1,0 +1,4 @@
+# Include DKD Green color scheme CSS
+page.includeCSS {
+    sitePackageColorScheme = EXT:site_package/Resources/Public/Css/color-scheme-dkd-green.css
+}

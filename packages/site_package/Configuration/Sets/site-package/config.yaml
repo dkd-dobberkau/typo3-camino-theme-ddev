@@ -1,0 +1,4 @@
+name: local/site-package
+label: Site Package
+dependencies:
+  - typo3/theme-camino

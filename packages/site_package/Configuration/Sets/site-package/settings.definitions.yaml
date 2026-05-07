@@ -1,0 +1,13 @@
+# Extend Camino color scheme options with DKD Green
+settings:
+  camino.colorScheme:
+    label: 'Color Scheme'
+    default: theme-dkd-green
+    type: string
+    enum:
+      theme-caramel-cream: 'Caramel Cream'
+      theme-ocean-breeze: 'Ocean Breeze'
+      theme-forest-mist: 'Forest Mist'
+      theme-violet-velvet: 'Violet Velvet'
+      theme-dkd-green: 'DKD Green'
+    category: camino
